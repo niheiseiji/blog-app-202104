@@ -5,7 +5,7 @@ volumes:
 
 services:
   web:
-    image: nginx:1.18
+    image: nginx:1.19
     ports:
       - '8000:80'
     depends_on:
@@ -18,7 +18,7 @@ services:
     volumes:
       - .:/var/www/
   db:
-    image: mysql:5.7
+    image: mysql:8.0
     ports:
       - '3306:3306'
     environment:
