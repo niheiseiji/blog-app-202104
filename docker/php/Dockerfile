@@ -12,6 +12,7 @@ RUN apt-get update \
 git \
 zip \
 unzip \
+vim \
 && docker-php-ext-install pdo_mysql bcmath
 
 WORKDIR /var/www/
